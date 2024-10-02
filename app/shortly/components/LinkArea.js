@@ -51,7 +51,7 @@ const LinkArea = () => {
           onChange={(e) => setLongUrl(e.target.value)} 
           required
         />
-        <button className='shortenBtn' type="submit">Shorten It!</button>
+        <button  type="submit">Shorten It!</button>
       </form>
 
       {shortUrl && (
