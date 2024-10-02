@@ -10,7 +10,7 @@ const Statistics = () => {
           <div className="iconRecognition"></div>
           <div className="statisticsItemContent">
             <h1>Brand Recognition</h1>
-            <p>Boost your brand recognition with each click. Generic links don’t mean a thing.</p>
+            <p>Boost your brand recognition with each click. Generic links don&apos;t mean a thing.</p>
           </div>
         </div>
         <div className="statisticsItem">
