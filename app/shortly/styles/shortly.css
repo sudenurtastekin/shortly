@@ -242,7 +242,7 @@ button:hover {
   max-width: 1110px;
   margin: 0 auto;
   background-color: var(--purple-color);
-  background-image: url("../../public/bg-shorten-mobile.svg");
+  background-image: url("../../../public/bg-shorten-mobile.svg");
   background-position: 100%;
   background-repeat: no-repeat;
   text-align: center;
@@ -339,7 +339,7 @@ button:hover {
 }
 
 .iconRecognition {
-  background-image: url("../../public/icon-brand-recognition.svg");
+  background-image: url("../../../public/icon-brand-recognition.svg");
   background-repeat: no-repeat;
   background-position: 50%;
   background-color: var(--purple-color);
@@ -351,7 +351,7 @@ button:hover {
 }
 
 .iconRecognitionDetailed {
-  background-image: url("../../public/detailed.svg");
+  background-image: url("../../../public/detailed.svg");
   background-repeat: no-repeat;
   background-position: 50%;
   background-color: var(--purple-color);
@@ -375,7 +375,7 @@ button:hover {
 }
 
 .iconRecords {
-  background-image: url("../../public/icon-detailed-records.svg");
+  background-image: url("../../../public/icon-detailed-records.svg");
   background-repeat: no-repeat;
   background-position: 50%;
   background-color: var(--purple-color);
@@ -387,7 +387,7 @@ button:hover {
 }
 
 .iconCustomizable {
-  background-image: url("../../public/icon-fully-customizable.svg");
+  background-image: url("../../../public/icon-fully-customizable.svg");
   background-repeat: no-repeat;
   background-position: 50%;
   background-color: var(--purple-color);
@@ -434,7 +434,7 @@ button:hover {
 
 .advert {
   background-color: var(--purple-color);
-  background-image: url("../../public/bg-boost-mobile.svg");
+  background-image: url("../../../public/bg-boost-mobile.svg");
   background-position: 100%;
   background-repeat: no-repeat;
   text-align: center;
