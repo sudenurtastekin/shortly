@@ -1,5 +1,4 @@
- 
-import { redirect } from 'next/navigation';
+ import { redirect } from 'next/navigation';
 
 const ShortUrlPage = async ({ params }) => {
   const { shorturl } = params;
