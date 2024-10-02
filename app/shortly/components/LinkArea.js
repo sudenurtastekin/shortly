@@ -11,7 +11,7 @@ const LinkArea = () => {
     setError(null);
 
     try {
-      const generatedShortUrl = generateShortUrl(); 
+      const generatedShortUrl = generateShortUrl();
 
       const response = await fetch("https://nkmvhnwulrqvvmnzfmdz.supabase.co/rest/v1/urls", {
         method: "POST",
@@ -27,9 +27,10 @@ const LinkArea = () => {
       });
 
       if (response.ok) {
-        setShortUrl(generatedShortUrl); 
+        setShortUrl(generatedShortUrl);
       } else {
-        throw new Error('Short URL oluşturulamadı');
+        const errorData = await response.json();
+        throw new Error(errorData.message || 'Short URL oluşturulamadı');
       }
     } catch (error) {
       setError(error.message);
@@ -37,7 +38,7 @@ const LinkArea = () => {
   };
 
   const generateShortUrl = () => {
-    return Math.random().toString(36).substring(2, 8); 
+    return Math.random().toString(36).substring(2, 8);
   };
 
   return (
@@ -48,17 +49,17 @@ const LinkArea = () => {
           id="link-input"
           placeholder="Shorten a link here..."
           value={longUrl}
-          onChange={(e) => setLongUrl(e.target.value)} 
+          onChange={(e) => setLongUrl(e.target.value)}
           required
         />
-        <button  type="submit">Shorten It!</button>
+        <button type="submit">Shorten It!</button>
       </form>
 
       {shortUrl && (
         <div id="shortened-link">
           <p className='longurl'>{longUrl}</p>
-          <a id="shortened-url" href={`/${shortUrl}`} target="_blank">
-            {`${window.location.origin}/${shortUrl}`}
+          <a id="shortened-url" href={`/shortly/${shortUrl}`} target="_blank">
+            {`${window.location.origin}/shortly/${shortUrl}`}
           </a>
         </div>
       )}
