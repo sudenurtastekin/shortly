@@ -1,4 +1,4 @@
- " use server"
+ 
 import { redirect } from 'next/navigation';
 
 const ShortUrlPage = async ({ params }) => {
@@ -14,9 +14,11 @@ const ShortUrlPage = async ({ params }) => {
   const data = await response.json();
 
   if (data.length > 0) {
-    const longUrl = data[0].long_url;
+    const longUrl = data[0].long_url; 
+
     redirect(longUrl);
   } else {
+   
     redirect('/404');
   }
 };
