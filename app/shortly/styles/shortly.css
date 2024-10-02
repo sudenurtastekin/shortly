@@ -363,7 +363,7 @@ button:hover {
 }
 
 .iconRecognitionFully {
-  background-image: url("../../public/fully.svg");
+  background-image: url("../../../public/fully.svg");
   background-repeat: no-repeat;
   background-position: 50%;
   background-color: var(--purple-color);
